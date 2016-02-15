@@ -1,0 +1,188 @@
+body {
+	margin: 0;
+	background-color: #EDF1F5;
+}
+
+/* Header top*/
+.header-top-1 {
+	box-shadow: 0 0 7px 1px rgba(0,0,0, 1);
+	padding: 10px;
+	background-color: #F5F7FA;
+	overflow: hidden;
+}
+.header-top-1 > p {
+	text-align: center;
+	font-size: 15px;
+	color: #434A54 !important;
+	line-height: 1.6;
+	font-weight: 400;
+	margin: 0;
+	box-sizing: border-box;
+	letter-spacing: .5px;
+}
+
+.header-top-1 a.btn-warning {
+	background-color: #F89D0E;
+	padding: 7px 12px;
+	margin-left: 10px;
+	border-radius: 2px;
+	font-size: 15px;
+}
+
+.header-top-2 {
+	padding: 15px 0;
+	background-color: #fff;
+}
+
+.header-top-2 > .container > .input-group {
+	width: 488px;
+	height: 30px;
+	color: white;
+}
+
+/* panel */
+.panel {
+	margin-bottom: 30px;
+}
+.first {
+	height: 216px;
+	background: url('images/monitor.jpg');
+	background-repeat: no-repeat;
+	background-position: 30% 65%;
+}
+.panel-footer {
+	border-top: 1px solid #e6e6e6;
+	background-color: #fff;
+	margin-top: 18px;
+}
+.panel_link {
+	color: #999;
+	padding: 12px 16px;
+	border-right: 1px solid #e6e6e6;
+}
+.marketing-checklist {
+	margin-bottom: 30px;
+
+}
+.marketing-checklist-list {
+	cursor: pointer;
+}
+.marketing-checklist-list:hover {
+	background-color: #EDF1F5;
+}
+.marketing-checklist h2 {
+	font-size: 21px;
+	line-height: 21px;
+	margin-left: 0px;
+	color: #333;
+}
+.marketing-checklist-list h3 {
+	border-top: 1px solid #CCD1D9;
+	border-bottom: 1px solid #CCD1D9;
+}
+h3, p {
+	font-size: 12px;
+	padding: 20px;
+}
+.seo-h3 {
+	margin: 0;
+	margin-left: 20px;
+}
+.seo-h3, .seo-p {
+	font-size: 12px;
+	padding: 0;
+	color: #333;
+}
+
+.goekope {
+	border: 4px solid #f1f1f1;
+    width: 487px;
+    padding: 12px 10px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+	margin-top: 20px;
+}
+.goekope > p:first-child {
+	font-size: 16px;
+    text-decoration: underline;
+    margin-bottom: 2px;
+	color: #00E;
+}
+.goekope > p {
+	margin: 0;
+	padding: 0;
+}
+.goekope > p:second-child {
+    color: #00802A;
+    font-size: 14px;
+    margin-bottom: 3px;
+	font-weight: bold;
+}
+.row {
+	margin: 0;
+}
+.business-card {
+	width: 25%;
+	float: left;
+}
+.business-card  img {
+    vertical-align: middle;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    margin-left: 20px;
+	margin-right: 10px;
+}
+.business-card span {
+	color: #315d86;
+}
+address {
+	font-size: 12px;
+	color: #333;
+}
+.bar {
+	margin: 0;
+    display: block;
+    height: 16px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    font-size: 11px;
+    background: #f1f1f1;
+    overflow: hidden;
+}
+.colored-bar {
+	width: 25%;
+	background: #315d86;
+    color: #fff;
+    display: block;
+    height: 16px;
+    line-height: 16px;
+    float: left;
+	border-radius: 0 10px 10px 0;
+}
+.even {
+	background-color: #f7f7f7;
+	font-size: 12px;
+	line-height: 18px;
+}
+tr {
+	border: none;
+}
+.optimize {
+	color: #AAB2BD;
+    font-size: 35px;
+    font-weight: 300;
+    line-height: 30px;
+    padding: 15px 0 35px 30px;
+}
+.criterium-advice {
+	background-color: #aedaae;
+	clear: both;
+	padding: 20px;
+	margin-top: 20px;
+}
+.criterium-advice p {
+	margin: 0 0 12px;
+	line-height: 18px;
+	padding: 0;
+}
