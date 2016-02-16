@@ -6,6 +6,9 @@ body {
 	margin-right: 10px;
 	color: #041;
 }
+.progress {
+	height: 10px;
+}
 .icon-right {
 	float: right;
 	color: gray;
@@ -70,12 +73,6 @@ nav > ul li a:hover .icon-right {
 .panel {
 	margin-bottom: 30px;
 	font-size: 12px;
-}
-.first {
-	height: 216px;
-	background: url('images/monitor.jpg');
-	background-repeat: no-repeat;
-	background-position: 50% 150%;
 }
 .panel-footer {
 	border-top: 1px solid #e6e6e6;
