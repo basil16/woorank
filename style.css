@@ -187,3 +187,72 @@ tr {
 	line-height: 18px;
 	padding: 0;
 }
+
+/*Mobile*/
+
+.mobile-panel h2 {
+	margin: 15px;
+	font-size: 21px;
+    line-height: 21px;
+    color: #333;
+}
+
+.mobile-panel h3 {
+	padding: 0;
+}
+.mobile-panel .row {
+	padding-bottom: 20px;
+	border-top: 1px solid #CCD1D9;
+	margin: 0 15px;
+}
+
+.mobile-panel  ul li {
+	margin-top: 10px;
+	margin-right: 10px;
+	background-color: #f1f1f1;	
+}
+.mobile-panel  ul li a span {
+	font-size: 11px;
+	color: #315d86;
+}
+
+/*Technologies*/
+.technologies-panel h2 {
+	margin: 15px;
+	font-size: 21px;
+    line-height: 21px;
+    color: #333;
+}
+.technologies-panel h3 {
+	padding: 0;
+}
+	
+.technologies-panel .row {
+	padding-bottom: 20px;
+	border-top: 1px solid #CCD1D9;
+	margin: 0 15px;
+}
+
+.technologies-panel ul li {
+	margin: 10px;
+}
+.technologies-panel ul li a span{
+	color: #315d86;
+	font-size: 12px;
+}
+
+/*Crawl Panel*/
+.crawl-panel h2 {
+	margin: 15px;
+	font-size: 21px;
+    line-height: 21px;
+    color: #333;
+}
+.crawl-panel h3 {
+	padding: 0;
+}
+.crawl-panel .row {
+	padding-bottom: 20px;
+	border-top: 1px solid #CCD1D9;
+	margin: 0 15px;
+}
