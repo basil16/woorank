@@ -2,7 +2,22 @@ body {
 	margin: 0;
 	background-color: #EDF1F5;
 }
-
+.icon {
+	margin-right: 10px;
+	color: #041;
+}
+.icon-right {
+	float: right;
+	color: gray;
+	display: none;
+	font-size: 8px;
+}
+nav > a:hover .icon-right {
+	display: inline;
+}
+nav > ul li a:hover .icon-right {
+	display: inline;
+}
 /* Header top*/
 .header-top-1 {
 	box-shadow: 0 0 7px 1px rgba(0,0,0, .3);
@@ -394,6 +409,7 @@ footer ul li {
 	text-align: left;
 	border-radius: 2px;
 	background-color: #EDF1F5;
+	padding-right: 0;
 }
 .ul-header {
 	display: block;
