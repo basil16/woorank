@@ -1,11 +1,16 @@
 body {
 	margin: 0;
 	background-color: #EDF1F5;
+	position: relative;
 }
 .icon {
 	margin-right: 10px;
 	color: #041;
 }
+.popover {
+	width: 200px;
+}
+
 .progress {
 	height: 10px;
 }

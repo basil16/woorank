@@ -11,6 +11,7 @@
 	<link rel="icon" href="images/favicon.jpg" type="image/icon">
 	
 	<script src="bootstrap/js/jquery-1.12.0.min.js"></script>
+	<script src="bootstrap/js/bootstrap.min.js"></script>
 </head>
 <body>
 	<div class="">
@@ -59,37 +60,26 @@
 					<nav>	
 						<a href="#marketing-checklist" class="btn btn-link"><span class="icon glyphicon glyphicon-check"></span> Marketing Checklist<span class="icon-right glyphicon glyphicon-chevron-right"></span></a>
 					</nav>
-					<nav>	
+					<nav class="navbar" id="myScrollspy">	
 						<ul class="list-unstyled">
-							<a class="ul-header">Optimize</a>
+							<!-- <li><a class="ul-header">Optimize</a></li> -->
 							<li><a href="#seo" class="btn btn-link"><span class="icon glyphicon glyphicon-search"></span>SEO<span class="icon-right glyphicon glyphicon-chevron-right"></a></li>
 							<li><a href="#mobile" class="btn btn-link"><span class="icon glyphicon glyphicon-phone"></span>Mobile<span class="icon-right glyphicon glyphicon-chevron-right"></a></li>
 							<li><a href="#usability" class="btn btn-link"><span class="icon glyphicon glyphicon-hand-up"></span>Usability<span class="icon-right glyphicon glyphicon-chevron-right"></a></li>
 							<li><a href="#technologies" class="btn btn-link"><span class="icon glyphicon glyphicon-chevron-left"></span>Technologies<span class="icon-right glyphicon glyphicon-chevron-right"></a></li>
 							<li><a href="#crawl" class="btn btn-link"><span class="icon glyphicon glyphicon-alert" ></span>Crawl Errors<span class="icon-right glyphicon glyphicon-chevron-right"></a></li>
-						</ul>
-					</nav>
-					<nav>	
-						<ul class="list-unstyled">
-							<a class="ul-header">Promote</a>
+							<li><a class="ul-header">Promote</a></li>
 							<li><a href="#backlink" class="btn btn-link"><span class="icon glyphicon glyphicon-link" ></span>Backlinks<span class="icon-right glyphicon glyphicon-chevron-right"></a></li>
 							<li><a href="#social" class="btn btn-link"><span class="icon glyphicon glyphicon-hand-right"></span>Social<span class="icon-right glyphicon glyphicon-chevron-right"></a></li>
 							<li><a href="#local" class="btn btn-link"><span class="icon glyphicon glyphicon-globe" ></span>Local<span class="icon-right glyphicon glyphicon-chevron-right"></a></li>
-						
-						</ul>
-					</nav>
-					<nav>	
-						<ul class="list-unstyled">
-							<a class="ul-header">Measure</a>
+							<li><a class="ul-header">Measure</a></li>
 							<li><a href="#serp" class="btn btn-link"><span class="icon glyphicon glyphicon-ok" ></span>SERP Checker<span class="icon-right glyphicon glyphicon-chevron-right"></a></li>
 							<li><a href="#visitor" class="btn btn-link"><span class="icon glyphicon glyphicon-user" ></span>Visitors<span class="icon-right glyphicon glyphicon-chevron-right"></a></li>
-					
-						
 						</ul>
 					</nav>
 				</div>
 			</div>
-			<div class="col-md-10" style="padding-top: 20px;">
+			<div data-spy="scroll" data-target="#myScrollspy" class="col-md-10" style="position: relative;padding-top: 20px;">
 				<div class="panel"> <!-- First Panel-->
 					<div class="panel-body first row"> 
 						<div class="col-md-4">
@@ -141,7 +131,16 @@
 						<a href="#" class="panel_link">Embed</a>
 						<a href="#" class="panel_link">Download as PDF</a>
 						<a href="#" class="panel_link">Download as Slides</a>
-						<a href="#" style="color: #315d86; float: right;font-size: 12px;">Share <span style="margin-left: 10px;" class="glyphicon glyphicon-menu-down"></span></a>
+						<a data-placement="bottom" data-toggle="popover" id="share" style="cursor: pointer;color: #315d86; float: right;font-size: 12px;">Share <span style="margin-left: 10px;" class="glyphicon glyphicon-menu-down"></span></a>
+						<div id="share_list" style="display: none;">
+							<ul class="list-unstyled">
+								<li style="margin: 0; padding: 5px; border-bottom: 1px solid #ccc;"><a> Get Short URL</a></li>
+								<li style="margin: 0; padding: 5px; border-bottom: 1px solid #ccc;"><a> Share on Facebook</a></li>
+								<li style="margin: 0; padding: 5px; border-bottom: 1px solid #ccc;"><a> Share on Twitter</a></li>
+								<li style="margin: 0; padding: 5px; border-bottom: 1px solid #ccc;"><a> Share on Google+</a></li>
+								<li style="margin: 0; padding: 5px;"><a> Share on LinkedIn</a></li>
+							</ul>
+						</div>
 					</div>
 				</div> <!-- end of First Panel-->
 				<div id="marketing-checklist" style="padding: 20px 0;">
@@ -966,6 +965,14 @@
 			} else {
 				$('.nav-left').removeClass('fixed');
 			}
+		});
+		
+		$('#share').popover({
+		content: function() {
+			return $('#share_list').html();
+		}, 
+		html: true, 
+		placement: "bottom"
 		});
 	});
 	</script>
