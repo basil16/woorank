@@ -13,7 +13,7 @@
 	<script src="bootstrap/js/jquery-1.12.0.min.js"></script>
 	<script src="bootstrap/js/bootstrap.min.js"></script>
 </head>
-<body>
+<body id="top">
 	<div class="">
 	<div class="header-top-1">
 	<p style="padding: 0;">Over 600,000 users have tried WooRank to optimize their website.
@@ -52,13 +52,21 @@
 		<div class="row">
 			<div class="col-md-2" style="padding: 20px 0;">		
 				<div class="nav-left">
-					<nav style="padding: 5px 15px; border-left: 2px solid #2b5c86; background-color: #3876ac;border-radius: 2px;">
-						<a style="background-color: none !important;color: #fff;padding: 5px;font-size: 12px;">
-						<span class="glyphicon glyphicon-chevron-up" style="margin-right: 5px;"></span>
-						Return to top</a>
+					<nav style="border-left: 2px solid #2b5c86;border-radius: 2px;">
+						<ul class="list-unstyled" style="padding: 0; margin: 0;">
+							<li class="active" style="padding: 5px 15px;">
+								<a href="#top" style="background-color: none !important;color: #fff;padding: 5px;font-size: 12px;">
+								<span class="glyphicon glyphicon-chevron-up" style="margin-right: 5px;"></span>
+								Return to top</a>
+							</li>
+						</ul>
 					</nav>
 					<nav>	
-						<a href="#marketing-checklist" class="btn btn-link"><span class="icon glyphicon glyphicon-check"></span> Marketing Checklist<span class="icon-right glyphicon glyphicon-chevron-right"></span></a>
+						<ul class="list-unstyled" style="padding: 0; margin: 0;">
+							<li>
+								<a href="#marketing-checklist" class="btn btn-link"><span class="icon glyphicon glyphicon-check"></span> Marketing Checklist<span class="icon-right glyphicon glyphicon-chevron-right"></span></a>
+							</li>
+						</ul>
 					</nav>
 					<nav class="navbar" id="myScrollspy">	
 						<ul class="list-unstyled">
@@ -68,11 +76,11 @@
 							<li><a href="#usability" class="btn btn-link"><span class="icon glyphicon glyphicon-hand-up"></span>Usability<span class="icon-right glyphicon glyphicon-chevron-right"></a></li>
 							<li><a href="#technologies" class="btn btn-link"><span class="icon glyphicon glyphicon-chevron-left"></span>Technologies<span class="icon-right glyphicon glyphicon-chevron-right"></a></li>
 							<li><a href="#crawl" class="btn btn-link"><span class="icon glyphicon glyphicon-alert" ></span>Crawl Errors<span class="icon-right glyphicon glyphicon-chevron-right"></a></li>
-							<li><a class="ul-header">Promote</a></li>
+							<li><a href="#promote" class="ul-header">Promote</a></li>
 							<li><a href="#backlink" class="btn btn-link"><span class="icon glyphicon glyphicon-link" ></span>Backlinks<span class="icon-right glyphicon glyphicon-chevron-right"></a></li>
 							<li><a href="#social" class="btn btn-link"><span class="icon glyphicon glyphicon-hand-right"></span>Social<span class="icon-right glyphicon glyphicon-chevron-right"></a></li>
 							<li><a href="#local" class="btn btn-link"><span class="icon glyphicon glyphicon-globe" ></span>Local<span class="icon-right glyphicon glyphicon-chevron-right"></a></li>
-							<li><a class="ul-header">Measure</a></li>
+							<li><a href="#measure" class="ul-header">Measure</a></li>
 							<li><a href="#serp" class="btn btn-link"><span class="icon glyphicon glyphicon-ok" ></span>SERP Checker<span class="icon-right glyphicon glyphicon-chevron-right"></a></li>
 							<li><a href="#visitor" class="btn btn-link"><span class="icon glyphicon glyphicon-user" ></span>Visitors<span class="icon-right glyphicon glyphicon-chevron-right"></a></li>
 						</ul>
@@ -738,7 +746,7 @@
 				</div>
 				</div>
 				<!--end of Crawl-->
-				<div class="promote">Promote</div>
+				<div id="promote" class="promote">Promote</div>
 				<!--Backlinks panel -->
 				<div id="backlink" style="padding: 20px 0;">
 				<div class="panel backlink-panel">
@@ -852,7 +860,7 @@
 				</div>
 				<!-- end of local panel-->
 				<div style="padding: 20px 0;">
-				<div class="measure">
+				<div id="measure" class="measure">
 					<h2>Measure</h2>
 				</div>
 				</div>
@@ -973,6 +981,13 @@
 		}, 
 		html: true, 
 		placement: "bottom"
+		});
+		
+		$('nav li').click(function() {
+			$('li.active').removeClass('active');
+			$('nav li a').css('color', '#000');
+			$(this).addClass('active');
+			$(this).children('a').css('color','#fff');
 		});
 	});
 	</script>

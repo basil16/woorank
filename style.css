@@ -20,6 +20,10 @@ body {
 	display: none;
 	font-size: 8px;
 }
+.active {
+	background-color: #3876ac;
+}
+
 nav > a:hover .icon-right {
 	display: inline;
 }
