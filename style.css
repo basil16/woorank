@@ -420,6 +420,9 @@ footer ul li {
 	top: 10px;
 	width: 180px;
 }
+.nav-left {
+	padding: 0;
+}
 .nav-left > nav {
 	margin: 10px 0;
 	border-left: 2px solid #CFE2F2; 
