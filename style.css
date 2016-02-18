@@ -3,6 +3,9 @@ body {
 	background-color: #EDF1F5;
 	position: relative;
 }
+a:hover {
+	text-decoration: none;
+}
 .icon {
 	margin-right: 10px;
 	color: #041;
@@ -438,4 +441,10 @@ footer ul li {
 }
 .nav-left > nav a:hover {
 	background-color: rgba(0,0,0,.05);
+}
+
+@media screen and (max-width: 800px) {
+	.nav-left {
+		display: none;
+	}
 }

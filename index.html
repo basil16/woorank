@@ -14,75 +14,81 @@
 	<script src="bootstrap/js/bootstrap.min.js"></script>
 </head>
 <body id="top">
-	<div class="">
 	<div class="header-top-1">
-	<p style="padding: 0;">Over 600,000 users have tried WooRank to optimize their website.
-	<a class="btn btn-warning">Start Your Free Trial</a></p>
+		<p style="padding: 0;">Over 600,000 users have tried WooRank to optimize their website.
+		<a class="btn btn-warning">Start Your Free Trial</a></p>
 	</div>
-	<div class="header-top-2 navbar" style="border-bottom: 1px solid #CCD1D9;">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-2">
-				<img style="margin-left: 50px;" src="images/logo.png" alt="image logo">
-				</div>
-				<div class="col-md-6">
-					<div class="input-group">
+	<nav class="navbar navbar-default">
+		<div class="container-fluid" style="padding: 8px; background-color: #fff;">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="container">
+			<div class="navbar-header">
+			  <button id="btn-mobile" type="button" class="navbar-toggle collapsed" data-toggle="collapse" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			  </button>
+			  <a class="navbar-brand" href="#"><img style="margin-left: 50px;" src="images/logo.png" alt="image logo"></a>
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse">
+				<form style="width: 600px;margin-top: 10px;padding-left: 25px;" class="navbar-form navbar-left" role="search">
+					<div class="input-group" style="width: 100%;">
 						<input type="text" class="form-control input-sm" placeholder="Website URL to review">
 						<span class="input-group-btn">
 							<button class="btn btn-default btn-sm" type="button">Review</button>
 						</span>		
 					</div><!-- /input-group -->
+				</form>
+				<div>
+					<ul style="margin-left: 90px;" class="nav navbar-nav">
+						<li style="margin-top: 5px;" class="dropdown">
+						    <button class="btn btn-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+								English
+								<span class="caret"></span>
+							</button>
+							
+						  <ul class="dropdown-menu">
+							<li><a href="#">Espa&#241ol</a></li>
+							<li><a href="#">Francais</a></li>
+							
+						  </ul>
+						</li>
+					</ul>
 				</div>
-				<div class="col-md-4">	
-					<div style="float: right;">
-					<p style="padding: 0;margin: 0;">
-						<span>English</span>
-						<span style="color: #ccc; margin-right:20px; margin-left: 10px;" class="glyphicon glyphicon-chevron-down"></span>		
-						<a class="btn btn-default btn-sm">Log In</a>
-						<a class="btn btn-warning btn-sm" style="margin: 0px 5px;background-color: #F89D0E;">
-						<strong>Try for Free</strong></a>
-						</p>
-					</div>	
+				<div style="float: right;margin-top: 10px;">
+					<p style="margin: 0;padding:0;">
+					<a class="btn btn-default btn-sm">Log In</a>
+					<a class="btn btn-warning btn-sm" style="margin: 0px 5px;background-color: #F89D0E;">
+					<strong>Try for Free</strong></a>
+					</p>
 				</div>
-			</div>
-		</div>
-	</div>
-	</div>
+			  </div>
+			</div><!-- /.navbar-collapse -->
+		</div><!-- /.container-fluid -->
+	</nav>
 	<div class="container">
 		<div class="row">
 			<div class="col-md-2" style="padding: 20px 0;">		
-				<div class="nav-left">
-					<nav style="border-left: 2px solid #2b5c86;border-radius: 2px;">
-						<ul class="list-unstyled" style="padding: 0; margin: 0;">
-							<li class="active" style="padding: 5px 15px;">
-								<a href="#top" style="background-color: none !important;color: #fff;padding: 5px;font-size: 12px;">
-								<span class="glyphicon glyphicon-chevron-up" style="margin-right: 5px;"></span>
-								Return to top</a>
-							</li>
-						</ul>
-					</nav>
-					<nav>	
-						<ul class="list-unstyled" style="padding: 0; margin: 0;">
-							<li>
-								<a href="#marketing-checklist" class="btn btn-link"><span class="icon glyphicon glyphicon-check"></span> Marketing Checklist<span class="icon-right glyphicon glyphicon-chevron-right"></span></a>
-							</li>
-						</ul>
-					</nav>
-					<nav class="navbar" id="myScrollspy">	
+				<div id="nav-left" class="nav-left collapse navbar-collapse">
+					<nav class="navbar" style="margin: 0;" id="myScrollspy">	
 						<ul class="list-unstyled">
-							<!-- <li><a class="ul-header">Optimize</a></li> -->
-							<li><a href="#seo" class="btn btn-link"><span class="icon glyphicon glyphicon-search"></span>SEO<span class="icon-right glyphicon glyphicon-chevron-right"></a></li>
-							<li><a href="#mobile" class="btn btn-link"><span class="icon glyphicon glyphicon-phone"></span>Mobile<span class="icon-right glyphicon glyphicon-chevron-right"></a></li>
-							<li><a href="#usability" class="btn btn-link"><span class="icon glyphicon glyphicon-hand-up"></span>Usability<span class="icon-right glyphicon glyphicon-chevron-right"></a></li>
-							<li><a href="#technologies" class="btn btn-link"><span class="icon glyphicon glyphicon-chevron-left"></span>Technologies<span class="icon-right glyphicon glyphicon-chevron-right"></a></li>
-							<li><a href="#crawl" class="btn btn-link"><span class="icon glyphicon glyphicon-alert" ></span>Crawl Errors<span class="icon-right glyphicon glyphicon-chevron-right"></a></li>
+							<li class="active"><a style="color: #fff;" href="#top" class="btn btn-link"><span class="icon glyphicon glyphicon-chevron-up"></span>Return to top</a></li>
+							<li><a href="#marketing-checklist" class="btn btn-link"><span class="icon glyphicon glyphicon-check"></span> Marketing Checklist<span class="icon-right glyphicon glyphicon-chevron-right"></span></a></li>
+							<li><a href="#seo" class="btn btn-link"><span class="icon glyphicon glyphicon-search"></span>SEO<span class="icon-right glyphicon glyphicon-chevron-right"></span></a></li>
+							<li><a href="#mobile" class="btn btn-link"><span class="icon glyphicon glyphicon-phone"></span>Mobile<span class="icon-right glyphicon glyphicon-chevron-right"></span></a></li>
+							<li><a href="#usability" class="btn btn-link"><span class="icon glyphicon glyphicon-hand-up"></span>Usability<span class="icon-right glyphicon glyphicon-chevron-right"></span></a></li>
+							<li><a href="#technologies" class="btn btn-link"><span class="icon glyphicon glyphicon-chevron-left"></span>Technologies<span class="icon-right glyphicon glyphicon-chevron-right"></span></a></li>
+							<li><a href="#crawl" class="btn btn-link"><span class="icon glyphicon glyphicon-alert" ></span>Crawl Errors<span class="icon-right glyphicon glyphicon-chevron-right"></span></a></li>
 							<li><a href="#promote" class="ul-header">Promote</a></li>
-							<li><a href="#backlink" class="btn btn-link"><span class="icon glyphicon glyphicon-link" ></span>Backlinks<span class="icon-right glyphicon glyphicon-chevron-right"></a></li>
-							<li><a href="#social" class="btn btn-link"><span class="icon glyphicon glyphicon-hand-right"></span>Social<span class="icon-right glyphicon glyphicon-chevron-right"></a></li>
-							<li><a href="#local" class="btn btn-link"><span class="icon glyphicon glyphicon-globe" ></span>Local<span class="icon-right glyphicon glyphicon-chevron-right"></a></li>
+							<li><a href="#backlink" class="btn btn-link"><span class="icon glyphicon glyphicon-link" ></span>Backlinks<span class="icon-right glyphicon glyphicon-chevron-right"></span></a></li>
+							<li><a href="#social" class="btn btn-link"><span class="icon glyphicon glyphicon-hand-right"></span>Social<span class="icon-right glyphicon glyphicon-chevron-right"></span></a></li>
+							<li><a href="#local" class="btn btn-link"><span class="icon glyphicon glyphicon-globe" ></span>Local<span class="icon-right glyphicon glyphicon-chevron-right"></span></a></li>
 							<li><a href="#measure" class="ul-header">Measure</a></li>
-							<li><a href="#serp" class="btn btn-link"><span class="icon glyphicon glyphicon-ok" ></span>SERP Checker<span class="icon-right glyphicon glyphicon-chevron-right"></a></li>
-							<li><a href="#visitor" class="btn btn-link"><span class="icon glyphicon glyphicon-user" ></span>Visitors<span class="icon-right glyphicon glyphicon-chevron-right"></a></li>
+							<li><a href="#serp" class="btn btn-link"><span class="icon glyphicon glyphicon-ok" ></span>SERP Checker<span class="icon-right glyphicon glyphicon-chevron-right"></span></a></li>
+							<li><a href="#visitor" class="btn btn-link"><span class="icon glyphicon glyphicon-user" ></span>Visitors<span class="icon-right glyphicon glyphicon-chevron-right"></span></a></li>
 						</ul>
 					</nav>
 				</div>
@@ -136,9 +142,9 @@
 						</div>
 					</div>
 					<div class="panel-footer">
-						<a href="#" class="panel_link">Embed</a>
-						<a href="#" class="panel_link">Download as PDF</a>
-						<a href="#" class="panel_link">Download as Slides</a>
+						<a  data-placement="bottom" data-toggle="popover" id="plan_em" href="#" class="panel_link">Embed</a>
+						<a  data-placement="bottom" data-toggle="popover" id="plan_dl" href="#" class="panel_link">Download as PDF</a>
+						<a data-placement="bottom" data-toggle="popover" id="plan_sl" href="#" class="panel_link">Download as Slides</a>
 						<a data-placement="bottom" data-toggle="popover" id="share" style="cursor: pointer;color: #315d86; float: right;font-size: 12px;">Share <span style="margin-left: 10px;" class="glyphicon glyphicon-menu-down"></span></a>
 						<div id="share_list" style="display: none;">
 							<ul class="list-unstyled">
@@ -148,6 +154,18 @@
 								<li style="margin: 0; padding: 5px; border-bottom: 1px solid #ccc;"><a> Share on Google+</a></li>
 								<li style="margin: 0; padding: 5px;"><a> Share on LinkedIn</a></li>
 							</ul>
+						</div>
+						<div id="plan_slides" style="display: none;text-align: center;">
+							<h5>Take a plan to unlock this feature.</h5>
+							<a style="width: 100%;" class="btn btn-sm btn-warning">14-Day Free Trial</a>
+						</div>
+						<div id="plan_download" style="display: none;text-align: center;">
+							<h5>Take a plan to unlock this feature.</h5>
+							<a style="width: 100%;" class="btn btn-sm btn-warning">14-Day Free Trial</a>
+						</div>
+							<div id="plan_embed" style="display: none;text-align: center;">
+							<h5>Take a plan to unlock this feature.</h5>
+							<a style="width: 100%;" class="btn btn-sm btn-warning">14-Day Free Trial</a>
 						</div>
 					</div>
 				</div> <!-- end of First Panel-->
@@ -473,7 +491,7 @@
 							<div class="col-md-8">
 								<div class="part progressbar low-percent" style="margin: 20px 0;">
 									<div class="content">
-										<span class="bar"><span class="colored-bar" style="width:25%;">9</span>
+										<span class="bar"><span class="colored-bar" style="width:25%;"></span>
 										<span class="value" data-abs-value="9"></span></span>
 									</div>
 								</div>
@@ -970,26 +988,68 @@
 	<script>
 	$(document).ready(function()  {
 		$(window).scroll(function() {
-			if ($(this).scrollTop() > 135) {
-				$('.nav-left').addClass('fixed');
-			} else {
-				$('.nav-left').removeClass('fixed');
+			if ( $(this).width() > '800') {
+				if ($(this).scrollTop() > 135) {
+					$('.nav-left').addClass('fixed');
+				} else {
+					$('.nav-left').removeClass('fixed');
+				}
 			}
 		});
 		
-		$('#share').popover({
-		content: function() {
-			return $('#share_list').html();
-		}, 
-		html: true, 
-		placement: "bottom"
+		$('body').on('click', function (e) {
+			$('[data-toggle="popover"]').each(function () {
+				//the 'is' for buttons that trigger popups
+				//the 'has' for icons within a button that triggers a popup
+				if (!$(this).is(e.target) && $(this).has(e.target).length === 0 && $('.popover').has(e.target).length === 0) {
+					$(this).popover('hide');
+				}
+			});
 		});
 		
-		$('nav li').click(function() {
-			$('li.active').removeClass('active');
-			$('nav li a').css('color', '#000');
+		$('#share').popover({
+			content: function() {
+				return $('#share_list').html();
+			}, 
+			html: true, 
+			placement: "bottom"
+		});
+		
+		$('#plan_sl').popover({
+			content: function() {
+				return $('#plan_slides').html();
+			}, 
+			html: true, 
+			placement: "bottom"
+		});
+		
+		$('#plan_dl').popover({
+			content: function() {
+				return $('#plan_download').html();
+			}, 
+			html: true, 
+			placement: "bottom"
+		});
+		$('#plan_em').popover({
+			content: function() {
+				return $('#plan_embed').html();
+			}, 
+			html: true, 
+			placement: "bottom"
+		});
+		
+		$('.nav-left ul li').click(function() {
+			$('nav li.active').removeClass('active');
+			
+			$('nav li a').css({
+				'color': '#000',
+			});
 			$(this).addClass('active');
 			$(this).children('a').css('color','#fff');
+		});
+		
+		$('#btn-mobile').click(function() {
+			$('.nav-left').slideToggle('slow');
 		});
 	});
 	</script>
